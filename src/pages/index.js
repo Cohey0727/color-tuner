@@ -9,6 +9,7 @@ export default function Home() {
     lighten: 0,
     darken: 0,
     saturate: 0,
+    desaturate: 0,
   });
 
   const changeValue = (key) => (e) => {
@@ -25,13 +26,15 @@ export default function Home() {
   return (
     <div>
       <div>
-        baseColor:{" "}
+        baseColor:
         <input onChange={changeValue("baseColor")} value={baseColor} />
         whiten: <input onChange={changeValue("whiten")} value={whiten} />
         blacken: <input onChange={changeValue("blacken")} value={blacken} />
         lighten: <input onChange={changeValue("lighten")} value={lighten} />
         darken: <input onChange={changeValue("darken")} value={darken} />
         saturate: <input onChange={changeValue("saturate")} value={saturate} />
+        desaturate:
+        <input onChange={changeValue("desaturate")} value={desaturate} />
       </div>
       <div>{JSON.stringify(state)}</div>
       <div
