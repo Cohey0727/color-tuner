@@ -16,7 +16,15 @@ export default function Home() {
     setState({ ...state, [key]: e.target.value });
   };
 
-  const { baseColor, whiten, blacken, lighten, darken, saturate } = state;
+  const {
+    baseColor,
+    whiten,
+    blacken,
+    lighten,
+    darken,
+    saturate,
+    desaturate,
+  } = state;
   let color;
   try {
     color = Color(baseColor);
