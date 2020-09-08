@@ -31,6 +31,12 @@ export default function Home() {
   } catch {
     color = Color("#FFF");
   }
+  const customColor = color
+    .whiten(whiten)
+    .blacken(blacken)
+    .lighten(lighten)
+    .darken(darken)
+    .saturate(saturate);
   return (
     <div>
       <div>
@@ -47,20 +53,15 @@ export default function Home() {
       <div>{JSON.stringify(state)}</div>
       <div
         style={{
-          backgroundColor: color
-            .whiten(whiten)
-            .blacken(blacken)
-            .lighten(lighten)
-            .darken(darken)
-            .saturate(saturate),
+          backgroundColor: customColor,
           width: 100,
           height: 100,
         }}
       />
       <div>
-        color: {String(color)}
-        hsl: {String(color.hsl())}
-        hex: {String(color.hex())}
+        color: {String(customColor)}
+        hsl: {String(customColor.hsl())}
+        hex: {String(customColor.hex())}
       </div>
     </div>
   );
