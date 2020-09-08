@@ -39,7 +39,7 @@ export default function Home() {
     .darken(darken)
     .saturate(saturate)
     .desaturate(desaturate);
-    
+
   return (
     <div>
       <div>
@@ -56,7 +56,7 @@ export default function Home() {
       <div>{JSON.stringify(state)}</div>
       <div
         style={{
-          backgroundColor: customColor,
+          backgroundColor: String(customColor),
           width: 100,
           height: 100,
         }}
