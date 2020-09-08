@@ -57,6 +57,12 @@ export default function Home() {
           height: 100,
         }}
       />
+      <div>
+        color: {color}
+        hsl: {color.hsl()}
+        hex: {color.hex()}
+        object: {color.object()}
+      </div>
     </div>
   );
 }
