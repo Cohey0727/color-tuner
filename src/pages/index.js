@@ -31,12 +31,15 @@ export default function Home() {
   } catch {
     color = Color("#FFF");
   }
+
   const customColor = color
     .whiten(whiten)
     .blacken(blacken)
     .lighten(lighten)
     .darken(darken)
-    .saturate(saturate);
+    .saturate(saturate)
+    .desaturate(desaturate);
+    
   return (
     <div>
       <div>
