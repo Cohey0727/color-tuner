@@ -58,10 +58,9 @@ export default function Home() {
         }}
       />
       <div>
-        color: {color}
-        hsl: {color.hsl()}
-        hex: {color.hex()}
-        object: {color.object()}
+        color: {String(color)}
+        hsl: {String(color.hsl())}
+        hex: {String(color.hex())}
       </div>
     </div>
   );
